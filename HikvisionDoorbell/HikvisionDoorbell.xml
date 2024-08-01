@@ -21,12 +21,12 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Doorbell Configuration" Target="DOORBELLS" Default="" Mode="" Description="Configuration of your doorbells. Refer to the project page for the specific formatting." Type="Variable" Display="always" Required="true" Mask="false">[{"name":"Front Gate", "ip":"192.168.3.82", "username":"admin", "password":"gfc47EY4HNxD"}]</Config>
-  <Config Name="MQTT Host" Target="MQTT__HOST" Default="" Mode="" Description="Add the address of your MQTT instance. " Type="Variable" Display="always" Required="true" Mask="false">192.168.3.123</Config>
-  <Config Name="MQTT Port" Target="MQTT__PORT" Default="1883" Mode="" Description="Add the port for your MQTT instance. " Type="Variable" Display="always" Required="true" Mask="false">1883</Config>
-  <Config Name="MQTT SSL" Target="MQTT__SSL" Default="" Mode="" Description="Specify if your MQTT instance requires SSL (true/false). " Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+  <Config Name="Doorbell Configuration" Target="DOORBELLS" Default="" Mode="" Description="Configuration of your doorbells. Refer to the project page for the specific formatting." Type="Variable" Display="always" Required="true" Mask="false">[{"name":"doorbell", "ip":"1.2.3.4", "username":"admin", "password":"password"}]</Config>
+  <Config Name="MQTT Host" Target="MQTT__HOST" Default="" Mode="" Description="Add the address of your MQTT instance. " Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MQTT Port" Target="MQTT__PORT" Default="1883" Mode="" Description="Add the port for your MQTT instance. " Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MQTT SSL" Target="MQTT__SSL" Default="" Mode="" Description="Specify if your MQTT instance requires SSL (true/false). " Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="MQTT User" Target="MQTT__USERNAME" Default="" Mode="" Description="Add the username for your MQTT user if required in your environment. " Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="MQTT Password" Target="MQTT__PASSWORD" Default="" Mode="" Description="Add the password for your MQTT user if required in your environment. " Type="Variable" Display="always" Required="false" Mask="true"/>
-  <Config Name="Log Level" Target="SYSTEM__LOG_LEVEL" Default="INFO" Mode="" Description="Specify the log level for the system" Type="Variable" Display="always" Required="true" Mask="false">DEBUG</Config>
-  <Config Name="SDK Log Level" Target="SYSTEM__SDK_LOG_LEVEL" Default="INFO" Mode="" Description="Specify the log level for the system" Type="Variable" Display="always" Required="true" Mask="false">DEBUG</Config>
+  <Config Name="Log Level" Target="SYSTEM__LOG_LEVEL" Default="INFO" Mode="" Description="Specify the log level for the system" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SDK Log Level" Target="SYSTEM__SDK_LOG_LEVEL" Default="INFO" Mode="" Description="Specify the log level for the system" Type="Variable" Display="always" Required="true" Mask="false"></Config>
 </Container>
