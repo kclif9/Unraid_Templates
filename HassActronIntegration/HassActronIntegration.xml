@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>HassActronQueNeoIntegration</Name>
+  <Repository>mikejmcguire/hass-actronque-amd64</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/MikeJMcGuire/HASSAddons</Project>
+  <Overview>Actron Que/Neo Air Conditioner Add-On for Home Assistant (https://blog.mikejmcguire.com/2021/02/11/actron-neo-and-home-assistant/)&#xD;
+&#xD;
+This add-on for Home Assistant enables you to control an Actron Air Conditioner equipped with the Actron Que or Actron Neo modules.&#xD;
+&#xD;
+The add-on requires you to use the Mosquitto MQTT broker on your Home Assistant device, with authentication enabled and a valid credential supplied. You'll also need to ensure that MQTT discovery is enabled with the default prefix 'homeassistant' for HA to discover the climate device and zone switches.</Overview>
+  <Category>HomeAutomation:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://actronair.com.au/wp-content/uploads/2020/10/ActronAir_logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1722492613</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Actron Username" Target="QueUser" Default="" Mode="" Description="Specify the username for your Actron Que or Neo account" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Actron Password" Target="QuePassword" Default="" Mode="" Description="Specify the password for your Actron Que or Neo account" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="MQTTBroker" Target="MQTTBroker" Default="" Mode="" Description="Set this field to core-mosquitto to use the HA Mosquitto MQTT add-on. Otherwise, specify a host or host:port for an alternative MQTT server." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MQTTTLS" Target="MQTTTLS" Default="false" Mode="" Description="Setting this option to true will force the MQTT client to attempt a TLS connection to the MQTT broker." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="MQTTUser" Target="MQTTUser" Default="" Mode="" Description="Specify the MQTT account username" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="MQTTPassword" Target="MQTTPassword" Default="" Mode="" Description="Specify the MQTT account password" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PerZoneControls" Target="PerZoneControls" Default="false" Mode="" Description="If you Actron has controllers in each zone, setting this option to true will create an air conditioner controller in HA for each zone." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PerZoneSensors" Target="PerZoneSensors" Default="false" Mode="" Description="If you Actron has sensors in each zone, setting this option to true will create battery and temperature entities in HA for each sensor even if there are multiple sensors in a zone." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PollInterval" Target="PollInterval" Default="30" Mode="" Description="By default, the add-on will poll the Que API system every 30 seconds for updates. This can be set to between 10 and 300 seconds inclusive." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="QueSerial" Target="QueSerial" Default="" Mode="" Description="If you have multiple AC units conencted to your Que, you can add this optional configuration to specify the serial number of the AC you want the add-on to use. You can find the discovered serial numbers in the log for the add-on when the add-on is starting. If you leave this field blank, the add-on will add all detected AC units." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SeparateHeatCoolTargets" Target="SeparateHeatCoolTargets" Default="false" Mode="" Description="This option specifies if you wish to use the new independently set target heating and cooling temperature settings introduced in HA 2023.9. This disables the single temperature set option that may impact existing automations." Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="SystemType" Target="SystemType" Default="que" Mode="" Description="This option specifies if you have a " Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>
