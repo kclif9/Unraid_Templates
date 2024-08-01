@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>HikvisionDoorbell</Name>
+  <Repository>pergolafabio/hikvision-doorbell</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/pergolafabio/Hikvision-Addons</Project>
+  <Overview>Connect to you Hikvision IP doorbells to receive events (motion detection, incoming call, etc..) and relay back commands (reject call, open doors, etc...).</Overview>
+  <Category>HomeAutomation:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://github.com/pergolafabio/Hikvision-Addons/blob/main/doorbell/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1722472912</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="CONFIG_FILE_PATH" Target="CONFIG_FILE_PATH" Default="" Mode="rw" Description="Specify the path to your config file." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/hikvision/</Config>
+</Container>
