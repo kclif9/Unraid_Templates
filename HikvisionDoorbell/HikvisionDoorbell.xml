@@ -1,17 +1,3 @@
-
-Dashboard
-Main
-Shares
-Users
-Settings
-Plugins
-Docker
-Apps
-Tools
-Update Container
-
-XML
-
 <?xml version="1.0"?>
 <Container version="2">
   <Name>HikvisionDoorbell</Name>
@@ -44,5 +30,3 @@ XML
   <Config Name="Log Level" Target="SYSTEM__LOG_LEVEL" Default="INFO" Mode="" Description="Specify the log level for the system" Type="Variable" Display="always" Required="true" Mask="false">DEBUG</Config>
   <Config Name="SDK Log Level" Target="SYSTEM__SDK_LOG_LEVEL" Default="INFO" Mode="" Description="Specify the log level for the system" Type="Variable" Display="always" Required="true" Mask="false">DEBUG</Config>
 </Container>
-
-
